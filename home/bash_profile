@@ -1,0 +1,4 @@
+if test $TERM = screen
+then source ~/.bashrc
+else tmux attach || tmux
+fi

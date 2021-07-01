@@ -1,0 +1,22 @@
+HISTCONTROL=ignoreboth
+shopt -s histappend
+HISTSIZE=1000
+HISTFILESIZE=2000
+
+alias clipin='xclip -i -selection clipboard'
+alias ls='ls --color=auto'
+
+start_servers() {
+	cd ~/code/iotwebserver
+	php artisan serve --host=0.0.0.0 &
+	npm run watch &
+	cd ~/code/athena
+	php -S localhost:8001 -t public &
+	cd ~/code/moduleserver
+	tmux new-window ./devrun.sh
+	cd ~/code
+}
+
+vardump() {
+	grep -o -P 'V\.[a-zA-Z0-9_]+' -- "$@"  | sort | uniq | xclip -i -selection clipboard
+}
