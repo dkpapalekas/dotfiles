@@ -1,0 +1,30 @@
+{
+    "workbench.sideBar.location": "right",
+    "workbench.colorTheme": "Visual Studio Dark",
+    "editor.minimap.enabled": false,
+    "editor.tabCompletion": "on",
+    "editor.quickSuggestionsDelay": 25,
+    "editor.wordBasedSuggestionsMode": "allDocuments",
+    "diffEditor.renderSideBySide": false,
+    "editor.wordWrap": "on",
+    "editor.fontSize": 20,
+    "editor.fontFamily": "Fira Code, monospace",
+    "editor.fontLigatures": true,
+    "editor.lineNumbers": "off",
+    "breadcrumbs.enabled": true,
+    "diffEditor.renderIndicators": false,
+    "editor.codeLens": false,
+    "editor.folding": false,
+    "editor.colorDecorators": true,
+    "editor.glyphMargin": false,
+    "workbench.statusBar.visible": false,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+
+    "workbench.colorCustomizations": {
+        "editorBracketMatch.background": "#3427ec",
+        "editorBracketMatch.border": "#FFF",
+        "editor.lineHighlightBackground": "#282828"
+    }
+}
