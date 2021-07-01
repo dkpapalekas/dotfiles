@@ -5,6 +5,7 @@ HISTFILESIZE=2000
 
 alias clipin='xclip -i -selection clipboard'
 alias ls='ls --color=auto'
+PS1='\e[1;32m\h\e[0m@\e[1;34m\u\e[0m [\t] > '
 
 start_servers() {
 	cd ~/code/iotwebserver
