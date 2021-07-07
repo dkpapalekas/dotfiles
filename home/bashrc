@@ -1,3 +1,10 @@
+RESET='\e[0m'
+RED='\e[1;31m'
+GREEN='\e[1;32m'
+BLUE='\e[1;34m'
+PURPLE='\e[1;35m'
+PS1="$GREEN\h$RESET@\e$BLUE\u $PURPLE\w$RESET \t $RED\$?$RESET\n> "
+
 HISTCONTROL=ignoreboth
 shopt -s histappend
 HISTSIZE=1000
@@ -5,7 +12,6 @@ HISTFILESIZE=2000
 
 alias clipin='xclip -i -selection clipboard'
 alias ls='ls --color=auto'
-PS1='\e[1;32m\h\e[0m@\e[1;34m\u\e[0m [\t] > '
 
 start_servers() {
 	cd ~/code/iotwebserver
